@@ -1,140 +1,3 @@
-# PowerShell-Cheat-Sheet
-
-
-
----
-
-## Cmdlet Name: Write-Host
-
-### Description
-Outputs text or objects to the console, displaying information to the user.
-
-### Syntax
-```powershell
-Write-Host "Your message here"
-```
-### Example
-```powershell
-Write-Host "Here is how you use the following command in PowerShell"
-```
-
-### Screenshot
-<img width="718" alt="image" src="https://github.com/user-attachments/assets/79ff695c-71d6-4ad4-9100-14b3c8729eb6">
-
----
-
-
-## Cmdlet Name: Get-Service | Where-Object
-
-### Description
-Gets all services on the system and filters them by their status.
-
-### Syntax
-```powershell
-Get-Service | Where-Object {$_.Status -eq "Stopped"}
-```
-
-### Example
-```powershell
-Get-Service | Where-Object {$_.Status -eq "Stopped"}
-```
-### Screenshot
-<img width="539" alt="image" src="https://github.com/user-attachments/assets/789e5ea3-6848-44d2-b780-550492a3290f">
-
-
----
-
-
-## Cmdlet Name: $host.version
-
-### Description
-Displays the version of the current PowerShell host.
-
-### Syntax
-```powershell
-$host.version
-```
-### Example and Screenshot
-```powershell
-$host.version
-```
-<img width="329" alt="image" src="https://github.com/user-attachments/assets/63e032df-c152-461b-83a9-2af56922be52">
-
-
----
-
-
-## Cmdlet Name: Get-History
-
-### Description
-Retrieves the list of commands entered in the current session.
-
-### Syntax
-```powershell
-Get-History
-```
-
-### Example and Screenshot
-
-```powershell
-Get-History
-```
-<img width="549" alt="image" src="https://github.com/user-attachments/assets/c70d653d-4815-4c06-ae45-9fb6a486c082">
-
-
----
-
-
-## Cmdlet Name: Invoke-History
-
-### Description
-Repeats a command from the history list.
-
-### Syntax
-```powershell
-Invoke-History <ID>
-```
-
-### Example
-```powershell
-Invoke-History 3
-```
-
-### Screenshot
-
-<img width="348" alt="image" src="https://github.com/user-attachments/assets/a5e32a50-dced-4ac3-aeaa-bc1c31a98908">
-
----
-
-## Cmdlet Name: Write-Output
-
-### Description
-Sends the output to the pipeline.
-
-### Syntax
-```powershell
-Write-Output "Your message here"
-```
-
-### Example
-```powershell
-Write-Output "Here is an answer"
-```
-
-### Screenshot
-
-<img width="562" alt="image" src="https://github.com/user-attachments/assets/e9279a7a-e121-4252-a877-3a29778f3a68">
-
----
-
-
-## CHECKPOINT FOR CLASSWORK 1
-
-The commands that were displayed above were all from Classwork 1, which was basically a review on some of the basic commands that we would get to use throughout PowerShell.
-
-
----
-
 
 # PowerShell Cheat Sheet
 
@@ -166,7 +29,7 @@ This repository serves as a cheat sheet for all the PowerShell cmdlets learned d
     ```powershell
     Write-Host "This is a message"
     ```
-- **Screenshot**
+- <img width="718" alt="image" src="https://github.com/user-attachments/assets/79ff695c-71d6-4ad4-9100-14b3c8729eb6">
 
 #### **Get-Service | Where-Object {$_.Status -eq "Stopped"}**
 - **Description:** Filters services that are stopped.
@@ -178,7 +41,7 @@ This repository serves as a cheat sheet for all the PowerShell cmdlets learned d
     ```powershell
     Get-Service | Where-Object {$_.Status -eq "Stopped"}
     ```
-- **Screenshot**
+- <img width="539" alt="image" src="https://github.com/user-attachments/assets/789e5ea3-6848-44d2-b780-550492a3290f">
 
 #### **$host.version**
 - **Description:** Displays the version of the current PowerShell host.
@@ -190,7 +53,7 @@ This repository serves as a cheat sheet for all the PowerShell cmdlets learned d
     ```powershell
     $host.version
     ```
-- **Screenshot**
+- <img width="329" alt="image" src="https://github.com/user-attachments/assets/63e032df-c152-461b-83a9-2af56922be52">
 
 #### **Get-History**
 - **Description:** Retrieves the history of commands used in the session.
@@ -202,7 +65,7 @@ This repository serves as a cheat sheet for all the PowerShell cmdlets learned d
     ```powershell
     Get-History
     ```
-- **Screenshot**
+- <img width="549" alt="image" src="https://github.com/user-attachments/assets/c70d653d-4815-4c06-ae45-9fb6a486c082">
 
 #### **Invoke-History 3**
 - **Description:** Executes a command from the history list by its ID.
@@ -214,7 +77,7 @@ This repository serves as a cheat sheet for all the PowerShell cmdlets learned d
     ```powershell
     Invoke-History 3
     ```
-- **Screenshot**
+- <img width="348" alt="image" src="https://github.com/user-attachments/assets/a5e32a50-dced-4ac3-aeaa-bc1c31a98908">
 
 #### **Write-Output "This is a sentence"**
 - **Description:** Outputs a string to the pipeline.
@@ -226,7 +89,7 @@ This repository serves as a cheat sheet for all the PowerShell cmdlets learned d
     ```powershell
     Write-Output "This is a sentence"
     ```
-- **Screenshot**
+- <img width="562" alt="image" src="https://github.com/user-attachments/assets/e9279a7a-e121-4252-a877-3a29778f3a68">
 
 ### Summary:
 Classwork 1 focused on basic cmdlets for output, service management, and command history. `Write-Host` and `Write-Output` helped with displaying messages, `Get-Service` with filtering services, and `$host.version` showed PowerShell host details. Additionally, you learned to work with command history using `Get-History` and `Invoke-History`.
