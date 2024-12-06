@@ -109,7 +109,8 @@ Classwork 1 focused on basic cmdlets for output, service management, and command
     ```powershell
     Get-Help Get-Service
     ```
-- **Screenshot**
+- <img width="422" alt="image" src="https://github.com/user-attachments/assets/316f6636-1bd1-42cf-a43b-1492fbc366fd">
+
 
 #### **Set-ExecutionPolicy**
 - **Description:** Changes the user preference for script execution policies.
@@ -121,7 +122,8 @@ Classwork 1 focused on basic cmdlets for output, service management, and command
     ```powershell
     Set-ExecutionPolicy RemoteSigned
     ```
-- **Screenshot**
+- <img width="436" alt="image" src="https://github.com/user-attachments/assets/6b723bd4-c87c-4522-a435-c1dc158cb64f">
+
 
 #### **Export-CSV**
 - **Description:** Exports data to a CSV file.
@@ -133,7 +135,8 @@ Classwork 1 focused on basic cmdlets for output, service management, and command
     ```powershell
     Get-Service | Export-CSV -Path "C:\services.csv" -NoTypeInformation
     ```
-- **Screenshot**
+- <img width="674" alt="image" src="https://github.com/user-attachments/assets/8781db57-0152-462a-95c9-b0446c801078">
+
 
 #### **Select-Object**
 - **Description:** Selects specific properties of an object.
@@ -145,7 +148,8 @@ Classwork 1 focused on basic cmdlets for output, service management, and command
     ```powershell
     Get-Service | Select-Object -Property Name, Status
     ```
-- **Screenshot**
+- <img width="602" alt="image" src="https://github.com/user-attachments/assets/c2d528e8-78b8-42f2-b9e4-0548074dbc61">
+
 
 #### **Get-Process**
 - **Description:** Retrieves a list of all running processes.
@@ -157,7 +161,8 @@ Classwork 1 focused on basic cmdlets for output, service management, and command
     ```powershell
     Get-Process
     ```
-- **Screenshot**
+- <img width="568" alt="image" src="https://github.com/user-attachments/assets/ddacdbe5-2287-421a-9fea-03a0b7311ff5">
+
 
 #### **Stop-Process**
 - **Description:** Stops a process by its ID or name.
@@ -169,7 +174,10 @@ Classwork 1 focused on basic cmdlets for output, service management, and command
     ```powershell
     Stop-Process -Name "notepad"
     ```
-- **Screenshot**
+- <img width="283" alt="image" src="https://github.com/user-attachments/assets/b7104a1c-7e62-433b-9c46-94ccb00f4d99">
+- <img width="302" alt="image" src="https://github.com/user-attachments/assets/e82ff83c-1b5f-40df-9ee2-1f83b6dec456">
+
+
 
 #### **Get-Service**
 - **Description:** Retrieves information about services on the system.
@@ -181,7 +189,8 @@ Classwork 1 focused on basic cmdlets for output, service management, and command
     ```powershell
     Get-Service
     ```
-- **Screenshot**
+- <img width="511" alt="image" src="https://github.com/user-attachments/assets/2ab7f9a9-3f09-4bc0-97ae-5e1a70bf10bd">
+
 
 #### **Get-WmiObject**
 - **Description:** Retrieves WMI objects.
@@ -193,7 +202,8 @@ Classwork 1 focused on basic cmdlets for output, service management, and command
     ```powershell
     Get-WmiObject -Class Win32_OperatingSystem
     ```
-- **Screenshot**
+- <img width="484" alt="image" src="https://github.com/user-attachments/assets/2d2f463b-0b3c-43c0-a789-39362666713c">
+
 
 #### **Get-EventLog**
 - **Description:** Retrieves event log data.
@@ -205,7 +215,8 @@ Classwork 1 focused on basic cmdlets for output, service management, and command
     ```powershell
     Get-EventLog -LogName Application
     ```
-- **Screenshot**
+- <img width="850" alt="image" src="https://github.com/user-attachments/assets/592c4b38-94c1-4cbb-86ab-61059fe139ea">
+
 
 #### **Get-Content**
 - **Description:** Retrieves the content of a file.
@@ -217,7 +228,8 @@ Classwork 1 focused on basic cmdlets for output, service management, and command
     ```powershell
     Get-Content -Path "C:\temp\file.txt"
     ```
-- **Screenshot**
+- <img width="521" alt="image" src="https://github.com/user-attachments/assets/8eedd241-a79a-4f6f-aa29-129391b1a062">
+
 
 #### **Get-NetAdapter**
 - **Description:** Retrieves network adapter information.
@@ -229,7 +241,8 @@ Classwork 1 focused on basic cmdlets for output, service management, and command
     ```powershell
     Get-NetAdapter
     ```
-- **Screenshot**
+- <img width="932" alt="image" src="https://github.com/user-attachments/assets/482ac88e-257a-4fe0-b453-2a366fd3a60a">
+
 
 ### Summary:
 Classwork 2 introduced essential cmdlets for managing system processes, services, event logs, and network adapters. `Get-Help` provided guidance, while `Set-ExecutionPolicy` modified script execution rules. You also learned to export data to CSV with `Export-CSV`, filter output with `Select-Object`, and manipulate processes and services with `Get-Process`, `Stop-Process`, and `Get-Service`. WMI and event logs were explored with `Get-WmiObject` and `Get-EventLog`.
@@ -257,7 +270,8 @@ Classwork 3 did not include any specific commands.
     ```powershell
     Get-ADComputer -Identity "Computer01"
     ```
-- **Screenshot**
+- <img width="914" alt="image" src="https://github.com/user-attachments/assets/3ea54fe4-4b61-4949-ad58-780019761850">
+
 
 #### **ForEach-Object**
 - **Description:** Performs an action for each object in a pipeline.
@@ -269,7 +283,8 @@ Classwork 3 did not include any specific commands.
     ```powershell
     Get-Service | ForEach-Object { $_.Name }
     ```
-- **Screenshot**
+- <img width="914" alt="image" src="https://github.com/user-attachments/assets/9e4202eb-200c-4bc6-80e0-158aed3219b0">
+
 
 ### Summary:
 Classwork 4 covered `Get-ADComputer`, which is used to retrieve Active Directory computer details, and `ForEach-Object`, which allows you to iterate over a collection of objects in a pipeline to perform actions on each object.
@@ -289,7 +304,8 @@ Classwork 4 covered `Get-ADComputer`, which is used to retrieve Active Directory
     ```powershell
     Enable-PSRemoting -Force
     ```
-- **Screenshot**
+- <img width="588" alt="image" src="https://github.com/user-attachments/assets/76d7fc74-2986-45ba-9c65-0d2a6a84201b">
+
 
 #### **Invoke-Command**
 - **Description:** Runs a command on a remote system.
@@ -301,7 +317,8 @@ Classwork 4 covered `Get-ADComputer`, which is used to retrieve Active Directory
     ```powershell
     Invoke-Command -ScriptBlock { Get-Process } -ComputerName "Server01"
     ```
-- **Screenshot**
+- <img width="890" alt="image" src="https://github.com/user-attachments/assets/14607456-d0ae-4f97-8616-00c8d5b5d46d">
+
 
 #### **New-PSSession**
 - **Description:** Creates a new PowerShell session to a remote system.
@@ -313,7 +330,8 @@ Classwork 4 covered `Get-ADComputer`, which is used to retrieve Active Directory
     ```powershell
     New-PSSession -ComputerName "Server01"
     ```
-- **Screenshot**
+- <img width="707" alt="image" src="https://github.com/user-attachments/assets/561ac418-3050-4701-923c-da311dcb1dd0">
+
 
 #### **Get-Module**
 - **Description:** Retrieves information about modules in the session.
@@ -325,7 +343,8 @@ Classwork 4 covered `Get-ADComputer`, which is used to retrieve Active Directory
     ```powershell
     Get-Module
     ```
-- **Screenshot**
+- <img width="931" alt="image" src="https://github.com/user-attachments/assets/4ca37611-d576-43fb-8a54-d1655a59c619">
+
 
 #### **Import-Module**
 - **Description:** Imports a module into the current session.
@@ -337,7 +356,8 @@ Classwork 4 covered `Get-ADComputer`, which is used to retrieve Active Directory
     ```powershell
     Import-Module ActiveDirectory
     ```
-- **Screenshot**
+- <img width="898" alt="image" src="https://github.com/user-attachments/assets/3340196c-35fd-44f8-9e10-366d71242510">
+
 
 #### **Get-RemoteNetAdapter**
 - **Description:** Retrieves network adapter information from a remote system.
@@ -349,7 +369,8 @@ Classwork 4 covered `Get-ADComputer`, which is used to retrieve Active Directory
     ```powershell
     Get-RemoteNetAdapter -ComputerName "Server01"
     ```
-- **Screenshot**
+- <img width="923" alt="image" src="https://github.com/user-attachments/assets/e066c9ed-231a-40ad-ac62-7a013b2d1214">
+
 
 #### **Remove-PSSession**
 - **Description:** Closes an established remote session.
@@ -361,7 +382,8 @@ Classwork 4 covered `Get-ADComputer`, which is used to retrieve Active Directory
     ```powershell
     Remove-PSSession -Session $session
     ```
-- **Screenshot**
+- <img width="771" alt="image" src="https://github.com/user-attachments/assets/d847538d-aec3-42ed-becb-2210d436d17d">
+
 
 #### **Enter-PSSession**
 - **Description:** Starts an interactive remote PowerShell session.
@@ -373,7 +395,8 @@ Classwork 4 covered `Get-ADComputer`, which is used to retrieve Active Directory
     ```powershell
     Enter-PSSession -ComputerName "Server01"
     ```
-- **Screenshot**
+- <img width="736" alt="image" src="https://github.com/user-attachments/assets/52acb26f-fe47-4dc8-be61-dd3887583e41">
+
 
 ### Summary:
 Classwork 5 focused on enabling and using PowerShell Remoting. Cmdlets such as `Invoke-Command`, `New-PSSession`, and `Enter-PSSession` were used for remote command execution, while `Get-Module` and `Import-Module` helped manage modules. You also learned to retrieve network adapter information remotely with `Get-RemoteNetAdapter` and close remote sessions with `Remove-PSSession`.
@@ -393,7 +416,8 @@ Classwork 5 focused on enabling and using PowerShell Remoting. Cmdlets such as `
     ```powershell
     Get-CimClass
     ```
-- **Screenshot**
+- <img width="893" alt="image" src="https://github.com/user-attachments/assets/742e2c31-02b8-4784-96b6-3fa6e5fa2047">
+
 
 #### **Where-Object**
 - **Description:** Filters objects in a pipeline based on a condition.
@@ -405,7 +429,8 @@ Classwork 5 focused on enabling and using PowerShell Remoting. Cmdlets such as `
     ```powershell
     Get-CimInstance -ClassName Win32_OperatingSystem | Where-Object { $_.Version -eq "10.0.18363" }
     ```
-- **Screenshot**
+- <img width="897" alt="image" src="https://github.com/user-attachments/assets/a4e3bf41-fd34-4be7-abce-6c8636480f61">
+
 
 #### **Get-CimInstance**
 - **Description:** Retrieves CIM instances (like WMI).
@@ -417,7 +442,8 @@ Classwork 5 focused on enabling and using PowerShell Remoting. Cmdlets such as `
     ```powershell
     Get-CimInstance -ClassName Win32_OperatingSystem
     ```
-- **Screenshot**
+- <img width="896" alt="image" src="https://github.com/user-attachments/assets/81ac5a8b-4321-4061-9941-c85f63dec1cb">
+
 
 ### Summary:
 Classwork 6 focused on CIM cmdlets, like `Get-CimClass`, `Get-CimInstance`, and `Where-Object` to retrieve and filter data from CIM classes, which are used for querying system information similar to WMI.
@@ -437,7 +463,8 @@ Classwork 6 focused on CIM cmdlets, like `Get-CimClass`, `Get-CimInstance`, and 
     ```powershell
     Get-Variable
     ```
-- **Screenshot**
+- <img width="706" alt="image" src="https://github.com/user-attachments/assets/44b4a013-95c0-4855-99c5-bd5583e187c4">
+
 
 #### **Remove-Variable**
 - **Description:** Removes a variable from the session.
@@ -449,7 +476,8 @@ Classwork 6 focused on CIM cmdlets, like `Get-CimClass`, `Get-CimInstance`, and 
     ```powershell
     Remove-Variable -Name "MyVar"
     ```
-- **Screenshot**
+- <img width="927" alt="image" src="https://github.com/user-attachments/assets/e5ac6d9d-4281-4604-ae4d-893679a508cd">
+
 
 ### Summary:
 Classwork 7 introduced variable management using `Get-Variable` and `Remove-Variable` to retrieve and delete variables in the session.
@@ -469,7 +497,10 @@ Classwork 7 introduced variable management using `Get-Variable` and `Remove-Vari
     ```powershell
     Read-Host "Enter your name"
     ```
-- **Screenshot**
+- <img width="665" alt="image" src="https://github.com/user-attachments/assets/b03c1667-2256-4ab3-bce1-7dee6a1b636b">
+- <img width="353" alt="image" src="https://github.com/user-attachments/assets/ba74f1c3-e03d-448c-8a44-5155763ec791">
+
+
 
 #### **Out-File**
 - **Description:** Sends output to a file.
@@ -481,7 +512,9 @@ Classwork 7 introduced variable management using `Get-Variable` and `Remove-Vari
     ```powershell
     "This is a test" | Out-File -FilePath "C:\test.txt"
     ```
-- **Screenshot**
+- <img width="665" alt="image" src="https://github.com/user-attachments/assets/b03c1667-2256-4ab3-bce1-7dee6a1b636b">
+- <img width="353" alt="image" src="https://github.com/user-attachments/assets/ba74f1c3-e03d-448c-8a44-5155763ec791">
+
 
 ### Summary:
 Classwork 8 focused on user input with `Read-Host` and output redirection with `Out-File`.
@@ -509,7 +542,8 @@ Classwork 9 did not include any specific commands.
     ```powershell
     New-Item -Path "C:\test" -ItemType Directory
     ```
-- **Screenshot**
+- <img width="930" alt="image" src="https://github.com/user-attachments/assets/d4bed060-50aa-4960-a1e4-04fc81adafd5">
+
 
 #### **New-SmbShare**
 - **Description:** Creates a new SMB share.
@@ -521,7 +555,8 @@ Classwork 9 did not include any specific commands.
     ```powershell
     New-SmbShare -Name "SharedFolder" -Path "C:\Shared"
     ```
-- **Screenshot**
+- <img width="855" alt="image" src="https://github.com/user-attachments/assets/32649b86-c4b7-4792-9c9b-1abef6f9d73d">
+
 
 #### **Get-SmbShare**
 - **Description:** Retrieves information about SMB shares.
@@ -533,7 +568,8 @@ Classwork 9 did not include any specific commands.
     ```powershell
     Get-SmbShare
     ```
-- **Screenshot**
+- <img width="806" alt="image" src="https://github.com/user-attachments/assets/0f01569e-6924-41fc-9dff-bd813750638e">
+
 
 #### **Get-Printer**
 - **Description:** Retrieves information about installed printers.
@@ -545,7 +581,8 @@ Classwork 9 did not include any specific commands.
     ```powershell
     Get-Printer
     ```
-- **Screenshot**
+- <img width="920" alt="image" src="https://github.com/user-attachments/assets/c4e75aae-5a01-4345-bf0a-0a8b8d59fa63">
+
 
 #### **Test-Path**
 - **Description:** Checks if a path exists.
@@ -557,7 +594,8 @@ Classwork 9 did not include any specific commands.
     ```powershell
     Test-Path "C:\test"
     ```
-- **Screenshot**
+- <img width="847" alt="image" src="https://github.com/user-attachments/assets/1a3d228a-417f-41dd-817e-983982f71ba2">
+
 
 ### Summary:
 Classwork 10 covered file and printer management using `New-Item`, `New-SmbShare`, `Get-SmbShare`, `Get-Printer`, and `Test-Path` to work with directories, network shares, printers, and file paths.
