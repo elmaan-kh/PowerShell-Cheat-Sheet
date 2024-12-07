@@ -1,7 +1,7 @@
 
 # PowerShell Cheat Sheet
 
-This repository serves as a cheat sheet for all the PowerShell cmdlets learned during the course. It includes a summary of cmdlets, descriptions, syntax, and practical examples.
+The following content provides a cheat sheet for PowerShell
 
 ### Table of Contents
 1. [Classwork 1](#classwork-1)
@@ -92,7 +92,7 @@ This repository serves as a cheat sheet for all the PowerShell cmdlets learned d
 - <img width="562" alt="image" src="https://github.com/user-attachments/assets/e9279a7a-e121-4252-a877-3a29778f3a68">
 
 ### Summary:
-Classwork 1 focused on basic cmdlets for output, service management, and command history. `Write-Host` and `Write-Output` helped with displaying messages, `Get-Service` with filtering services, and `$host.version` showed PowerShell host details. Additionally, you learned to work with command history using `Get-History` and `Invoke-History`.
+In Classwork 1 I have learned basic commands for output, service management, and command history. `Write-Host` and `Write-Output` helped with displaying messages, `Get-Service` with filtering services, and `$host.version` showed PowerShell host details. I also learned to work with command history using `Get-History` and `Invoke-History`.
 
 ---
 
@@ -245,7 +245,7 @@ Classwork 1 focused on basic cmdlets for output, service management, and command
 
 
 ### Summary:
-Classwork 2 introduced essential cmdlets for managing system processes, services, event logs, and network adapters. `Get-Help` provided guidance, while `Set-ExecutionPolicy` modified script execution rules. You also learned to export data to CSV with `Export-CSV`, filter output with `Select-Object`, and manipulate processes and services with `Get-Process`, `Stop-Process`, and `Get-Service`. WMI and event logs were explored with `Get-WmiObject` and `Get-EventLog`.
+In Classwork 2, I learned important commands for managing system processes, services, event logs, and network adapters. `Get-Help` provided guidance, while `Set-ExecutionPolicy` modified script execution rules. I also learned to export data to CSV with `Export-CSV`, filter output with `Select-Object`, and manipulate processes and services with `Get-Process`, `Stop-Process`, and `Get-Service`. WMI and event logs were explored with `Get-WmiObject` and `Get-EventLog`.
 
 ---
 
@@ -253,7 +253,7 @@ Classwork 2 introduced essential cmdlets for managing system processes, services
 *No commands to include*
 
 ### Summary:
-Classwork 3 did not include any specific commands.
+Although there were no new commands that I got to use, this classwork focused on handling CSV files, exploring Export-CSV and Import-CSV for data export and conversion, and comparing plain text vs. CSV-formatted outputs. It also introduced service management with Stop-Service and Restart-Service.
 
 ---
 
@@ -287,7 +287,7 @@ Classwork 3 did not include any specific commands.
 
 
 ### Summary:
-Classwork 4 covered `Get-ADComputer`, which is used to retrieve Active Directory computer details, and `ForEach-Object`, which allows you to iterate over a collection of objects in a pipeline to perform actions on each object.
+In Classwork 4, I covered `Get-ADComputer`, which is used to retrieve Active Directory computer details, and `ForEach-Object`, which allows you to iterate over a collection of objects in a pipeline to perform actions on each object.
 
 ---
 
@@ -399,7 +399,7 @@ Classwork 4 covered `Get-ADComputer`, which is used to retrieve Active Directory
 
 
 ### Summary:
-Classwork 5 focused on enabling and using PowerShell Remoting. Cmdlets such as `Invoke-Command`, `New-PSSession`, and `Enter-PSSession` were used for remote command execution, while `Get-Module` and `Import-Module` helped manage modules. You also learned to retrieve network adapter information remotely with `Get-RemoteNetAdapter` and close remote sessions with `Remove-PSSession`.
+In Classwork 5, I focused on enabling and using PowerShell Remoting. Commands like `Invoke-Command`, `New-PSSession`, and `Enter-PSSession` were used for remote command execution, while `Get-Module` and `Import-Module` helped manage modules. I also learned to retrieve network adapter information remotely with `Get-RemoteNetAdapter` and close remote sessions with `Remove-PSSession`.
 
 ---
 
@@ -446,7 +446,7 @@ Classwork 5 focused on enabling and using PowerShell Remoting. Cmdlets such as `
 
 
 ### Summary:
-Classwork 6 focused on CIM cmdlets, like `Get-CimClass`, `Get-CimInstance`, and `Where-Object` to retrieve and filter data from CIM classes, which are used for querying system information similar to WMI.
+For Classwork 6, I focused on CIM commands, like `Get-CimClass`, `Get-CimInstance`, and `Where-Object` to retrieve and filter data from CIM classes, which are used for querying system information similar to WMI.
 
 ---
 
@@ -525,7 +525,7 @@ Classwork 8 focused on user input with `Read-Host` and output redirection with `
 *No commands to include*
 
 ### Summary:
-Classwork 9 did not include any specific commands.
+Even though there were no new commands that I learned here, Classwork 9 focused on playing around with the Task Scheduler and using it to create tasks that we can use and observe through PowerShell.
 
 ---
 
@@ -598,7 +598,7 @@ Classwork 9 did not include any specific commands.
 
 
 ### Summary:
-Classwork 10 covered file and printer management using `New-Item`, `New-SmbShare`, `Get-SmbShare`, `Get-Printer`, and `Test-Path` to work with directories, network shares, printers, and file paths.
+Lastly, Classwork 10 covered file and printer management using `New-Item`, `New-SmbShare`, `Get-SmbShare`, `Get-Printer`, and `Test-Path` to work with directories, network shares, printers, and file paths.
 
 ---
 
